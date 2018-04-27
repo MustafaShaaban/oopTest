@@ -1,0 +1,42 @@
+.body {
+    clear: both;
+}
+.form {
+    width:calc(25% - 40px);
+    float: left;
+    padding:10px;
+    border:2px solid #DDDDDD;
+    margin:20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.data {
+    float: right;
+    width:calc(75% - 40px);
+    margin:20px;
+}
+.data thead th {
+    min-width:200px;
+}
+
+.data tbody tr td {
+     cursor: pointer;
+     position: relative;
+     overflow: hidden;
+ }
+.data tbody tr td:last-of-type a .btn {
+    padding:5px;
+    width:30px;
+}
+.data tbody tr td:last-of-type a {
+    position: absolute;
+    top:7px;
+    right:-200px;
+    transition: .2s all ease-in-out;
+}
+.data tbody tr:hover td a:first-of-type {
+    right:40px;
+}.data tbody tr:hover td a:last-of-type {
+    right:5px;
+}
